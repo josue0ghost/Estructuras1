@@ -5,9 +5,12 @@
         <hr />
         <input v-model.number="B" placeholder="Inserta un numero" />
         <hr />        
-        <button @click="suma">Operar</button>
+        <button @click="suma"> + </button>
+        <button @click="resta"> - </button>
+        <button @click="div"> / </button>
+        <button @click="mult"> * </button>
         <hr />
-        <span>La suma de los dos numeros es: {{ SUM }}</span>    
+        <span> = {{ Result }}</span>
     </div>
 </template>
 
@@ -20,10 +23,22 @@
 
         A: number = 0
         B: number = 0
-        SUM: number = 0
+        Result: number = 0
 
         suma() {
-            this.SUM = this.A + this.B 
+            this.Result = this.A + this.B 
+        }
+
+        resta() {
+            this.Result = this.A - this.B
+        }
+
+        div() {
+            this.Result = this.A / this.B
+        }
+
+        mult() {
+            this.Result = this.A * this.B
         }
     }
     
