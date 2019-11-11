@@ -4,7 +4,7 @@
         <input v-model.number="A" placeholder="Inserta un numero" />
         <hr />
         <input v-model.number="B" placeholder="Inserta un numero" />
-        <hr />        
+        <hr />
         <button @click="suma"> + </button>
         <button @click="resta"> - </button>
         <button @click="div"> / </button>
@@ -12,6 +12,7 @@
         <hr />
         <span> = {{ Result }}</span>
     </div>
+    
 </template>
 
 <script lang="ts">
@@ -45,4 +46,7 @@
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    h1 {
+        font-family: 'Comic Sans MS';
+    }
 </style>
